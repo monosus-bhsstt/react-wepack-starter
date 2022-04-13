@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "outDir": "build",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5",
+    "noImplicitAny": true,
+    "noImplicitReturns": true
+  },
+  "include": ["src", "config/*"],
+}
