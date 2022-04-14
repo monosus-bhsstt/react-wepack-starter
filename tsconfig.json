@@ -6,12 +6,12 @@
     "jsx": "react",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
-    "outDir": "build",
+    "outDir": "dist",
     "sourceMap": true,
     "strict": true,
     "target": "es5",
     "noImplicitAny": true,
     "noImplicitReturns": true
   },
-  "include": ["src", "config/*"],
+  "include": ["src", "config/*", "types"],
 }
