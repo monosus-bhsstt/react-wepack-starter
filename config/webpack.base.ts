@@ -1,4 +1,7 @@
 import * as webpack from "webpack";
+import ProgressBarPlugin from "progress-bar-webpack-plugin";
+import chalk from "chalk";
+
 import { paths } from "./paths.js"
 
 const rules: webpack.RuleSetRule[] = [
@@ -38,7 +41,13 @@ const baseConfig: webpack.Configuration = {
     },
     module: {
         rules: rules
-    }
+    },
+    plugins:[
+        new ProgressBarPlugin({
+            format: ` :msg [:bar] ${chalk.green.bold(":percent")} (:elapsed s)`,
+            total: 100
+        }) as { apply(...args: any[]): void; },
+    ],
 }
 
 export default baseConfig;
