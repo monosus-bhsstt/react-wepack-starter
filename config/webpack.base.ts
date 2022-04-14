@@ -22,7 +22,7 @@ const rules: webpack.RuleSetRule[] = [
 
 const baseConfig: webpack.Configuration = {
     entry: {
-        index: './src/index.tsx'
+        index: ['./src/index.tsx']
     },
     output: {
         path: paths.appDist,

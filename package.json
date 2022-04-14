@@ -19,6 +19,7 @@
     "@types/progress-bar-webpack-plugin": "2.1.2",
     "@types/react": "18.0.3",
     "@types/react-dom": "18.0.0",
+    "@types/webpack": "5.28.0",
     "chalk": "5.0.1",
     "esbuild-loader": "2.18.0",
     "progress-bar-webpack-plugin": "2.1.0",
