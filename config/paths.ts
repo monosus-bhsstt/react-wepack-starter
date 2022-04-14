@@ -7,7 +7,6 @@ const resolveApp = (relativePath: string) => path.resolve(appDirectory, relative
 
 export const paths = {
     resolveApp,
-    appPublic: resolveApp('public'),
     appSrc: resolveApp('src'),
     appDist: resolveApp('dist')
 }

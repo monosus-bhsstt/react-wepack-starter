@@ -18,13 +18,12 @@ const rules: webpack.RuleSetRule[] = [
 ];
 
 const baseConfig: webpack.Configuration = {
-    mode: 'development',
     entry: {
         index: './src/index.tsx'
     },
     output: {
-      filename: '[name].bundle.js',
         path: paths.appDist,
+        filename: '[name].bundle.js',
     },
     resolve: {
         alias: {
